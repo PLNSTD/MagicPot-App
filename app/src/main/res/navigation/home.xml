@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="it.uniparthenope.studenti.nappogiuseppe003.lunaplidher001.magicpot.ui.magicpot.PotFragment"
+        android:label="MagicPot"
+        tools:layout="@layout/fragment_home">
+
+       <action
+            android:id="@+id/action_pot_to_result"
+            app:destination="@id/nav_result_pot"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_result_pot"
+        android:name="it.uniparthenope.studenti.nappogiuseppe003.lunaplidher001.magicpot.ui.resultmagicpot.ResultFragment"
+        android:label="Ricette Trovate"
+        tools:layout="@layout/result_fragment">
+
+        <action
+            android:id="@+id/action_result_to_recipe"
+            app:destination="@+id/nav_recipe"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_recipe"
+        android:name="it.uniparthenope.studenti.nappogiuseppe003.lunaplidher001.magicpot.ui.fullrecipe.FullRecipe"
+        android:label="Ricetta"
+        tools:layout="@layout/fragment_recipe">
+    </fragment>
+
+</navigation>

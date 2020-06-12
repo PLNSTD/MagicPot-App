@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_pot"
+        android:contentDescription="MagicPot"
+        android:title="MagicPot" />
+
+    <item
+        android:id="@+id/list"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:contentDescription="Cerca Ricette"
+        android:title="Cerca" />
+
+    <item
+        android:id="@+id/form"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:contentDescription="Invia Ricetta"
+        android:title="Contribuisci" />
+
+</menu>

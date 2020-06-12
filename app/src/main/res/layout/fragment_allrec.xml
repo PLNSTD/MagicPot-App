@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/allRecFrag"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.">
+
+    <AutoCompleteTextView
+        android:id="@+id/window_rec"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_text_rounded"
+        android:backgroundTint="#E1E1E1"
+        android:completionThreshold="1"
+        android:dropDownAnchor="@+id/window_rec"
+        android:hint="Ricerca Ricetta"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:singleLine="true"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_prev"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="◄ PREV"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toBottomOf="@+id/window_rec"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/pag_corr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pagina"
+        android:textColor="@color/lightGreyColor"
+        app:layout_constraintLeft_toRightOf="@+id/btn_prev"
+        app:layout_constraintRight_toLeftOf="@+id/btn_next"
+        app:layout_constraintTop_toBottomOf="@id/window_rec"
+        app:layout_constraintTop_toTopOf="@+id/btn_prev"
+        app:layout_constraintBottom_toBottomOf="@id/btn_next"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="NEXT ►"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toBottomOf="@+id/window_rec"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recViewRecipe"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="55dp"
+        android:paddingTop="20dp"
+        app:layout_constraintTop_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
