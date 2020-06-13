@@ -45,16 +45,6 @@ class FullRecipe : Fragment() {
             recDes.text = fullRicetta.des
             recImage.setImageBitmap(fullRicetta.image)
 
-            //Text correction
-            recDes.text = recDes.text.toString().replace("xa0","")
-            recDes.text = recDes.text.toString().replace("\\","")
-            recDes.text = recDes.text.toString().replace("['","")
-            recDes.text = recDes.text.toString().replace("[\"","")
-            recDes.text = recDes.text.toString().replace("']","")
-            recDes.text = recDes.text.toString().replace("\"","")
-            recDes.text = recDes.text.toString().replace(".,",".")
-            recDes.text = recDes.text.toString().replace(",,",",")
-
             //Showing recipe ingredients
             val iList = fullRicetta.ingredients
             for(i in 0 until iList.size){
